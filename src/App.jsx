@@ -26,7 +26,6 @@ const timeSlots = [
   '03:00 PM - 04:00 PM', '04:00 PM - 05:00 PM'
 ];
 
-// --- MASSIVE PRE-FILLED DUMMY DATA ---
 const initialTimetables = {
   'MCA 304': {
     'Monday': {
@@ -115,7 +114,6 @@ export default function App() {
   const [timetables, setTimetables] = useState(initialTimetables);
   const [modal, setModal] = useState({ isOpen: false, day: '', slot: '', dept: 'CSE', subject: '' });
 
-  // --- LOGIC ---
   const handleLogin = () => {
     const validUser = users[loginForm.id.toLowerCase().trim()];
     if (validUser && validUser.pass === loginForm.pass) setUser(validUser);
@@ -144,7 +142,7 @@ export default function App() {
     setModal({ ...modal, isOpen: false });
   };
 
-  // --- UI RENDERING ---
+ //ui rndring
   if (!user) {
     return (
       <div className="app-wrapper">
@@ -264,7 +262,7 @@ export default function App() {
           </table>
         </div>
 
-        {/* Edit Modal */}
+        {}
         {modal.isOpen && (
           <div className="modal-overlay no-print">
             <div className="modal-content">
