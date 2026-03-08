@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css'; 
 
-// --- DATABASE WITH ALL LOGINS ---
 const users = {
   'admin': { pass: 'admin123', role: 'overall', dept: 'ALL' },
   'cse': { pass: 'cse123', role: 'dept', dept: 'CSE' },
