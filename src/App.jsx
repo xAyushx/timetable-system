@@ -283,7 +283,7 @@ export default function App() {
                 <label>Subject & Teacher</label>
                 <input 
                   value={modal.subject} 
-                  placeholder="e.g. Data Structures - Dr. Smith" 
+                  placeholder="e.g. Competative Programming-Prof.xyz" 
                   onChange={e => setModal({ ...modal, subject: e.target.value })} 
                   onKeyDown={(e) => e.key === 'Enter' && saveCell()}
                 />
